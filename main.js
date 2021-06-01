@@ -36,7 +36,7 @@ function showTasks(){
   }else{
     listArray = JSON.parse(getLocalStorageData); 
   }
-  const pendingTasksNumb = document.querySelector(".pending");
+  const pendingTasksNumb = document.querySelector(".pendingTasks");
   pendingTasksNumb.textContent = listArray.length; 
   if(listArray.length > 0){ 
     deleteAllBtn.classList.add("active"); //active the delete button
